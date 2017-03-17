@@ -42,7 +42,7 @@ By default its `css`. Atom (and possibly other editors) will automatically synta
 {
   "plugins": [["template-strings-postcss", {
     "tagName: "csjs",
-    "plugins": [["autoprefixer", {"browsers": ["last 2 versions"]}]]
+    "plugins": [ ["autoprefixer", {"browsers": ["last 2 versions"]}] ]
   }]]
 }
 ```
