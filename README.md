@@ -8,24 +8,20 @@ Works with [`csjs`](https://github.com/rtsao/csjs) or  [`template-css`](https://
 
 **Before:**
 ```javascript
-css`
-
-.foo {
-  transform: ${foo};
-}
-
+var style = css`
+  .foo {
+    transform: ${foo};
+  }
 `
 ```
 
 **After:**
 ```javascript
-css`
-
-.foo {
-  -webkit-transform: ${ foo };
-          transform: ${ foo };
-}
-
+var style = css`
+  .foo {
+    -webkit-transform: ${ foo };
+            transform: ${ foo };
+  }
 `
 ```
 
