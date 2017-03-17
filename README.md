@@ -26,18 +26,19 @@ var style = css`
 ```
 
 **.babelrc**
-```
+```javascript
 {
   "plugins": [["template-strings-postcss", {
     "plugins": [["autoprefixer", {"browsers": ["last 2 versions"]}]]
   }]]
 }
+```
 
 ### Supply custom CSS function name
 
 By default its `css`. Atom (and possibly other editors) will automatically syntax highlight your CSS inside template strings, when passed to a function called `css`.
 
-```
+```javascript
 {
   "plugins": [["template-strings-postcss", {
     "tagName: "csjs",
@@ -45,4 +46,3 @@ By default its `css`. Atom (and possibly other editors) will automatically synta
   }]]
 }
 ```
-
