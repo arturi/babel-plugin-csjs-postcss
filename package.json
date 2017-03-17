@@ -1,9 +1,11 @@
 {
-  "name": "babel-plugin-csjs-postcss",
-  "version": "0.3.0",
-  "description": "Babel plugin for running postcss on csjs",
+  "name": "babel-plugin-template-strings-postcss",
+  "version": "0.1.0",
+  "description": "Babel plugin for running PostCSS on CSS template strings",
   "keywords": [
-    "csjs",
+    "css",
+    "postcss",
+    "template-strings",
     "babel-plugin"
   ],
   "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
