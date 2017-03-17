@@ -5,7 +5,9 @@ module.exports = function({types: t}) {
   return {
     visitor: {
       TaggedTemplateExpression: function(path, state) {
-        if (path.node.tag.name !== 'csjs') {
+        var tagName = state.opts.tagName || 'css'
+
+        if (path.node.tag.name !== tagName) {
           return false;
         }
 
